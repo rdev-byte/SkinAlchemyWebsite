@@ -4,7 +4,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h1 className="Maharlika-Font">Welcome to Skin Alchemy</h1>
+        <p>
+        </p>
+{/* 'Welcome to' with default font */}
+<span className="Welcome-Font">Welcome to</span>
+{/* 'Skin ALCHEMY' with Maharlika font and 'ESTHETICS' in smaller font size */}
+<span className="Maharlika-Font">Skin ALCHEMY <span className="Smaller-Font">ESTHETICS</span></span>
+
+
         <p>
           Skin Alchemy is the passionate endeavor of Megan Rizk, a dedicated esthetician with over 11 years of experience in the beauty and skincare industry.
         </p>
@@ -17,7 +24,13 @@ function App() {
         <p>
           Her expertise covers a wide range of skincare services, making Skin Alchemy your go-to destination for achieving radiant and healthy skin.
         </p>
-
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        </a>
       </header>
     </div>
   );
