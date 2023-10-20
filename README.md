@@ -53,7 +53,6 @@ To get started with Skin Alchemy, visit our website at [https://www.yourwebsite.
 3. Experience personalized skincare solutions.
 4. Provide a payment method for people/visitors.
 
-
 ## Contributing
 We welcome contributions from the community. If you have ideas, suggestions, or want to report issues, please open an [issue](https://github.com/yourusername/yourrepository/issues) on our GitHub repository.
 
