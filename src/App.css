@@ -2,38 +2,32 @@
   text-align: center;
 }
 
+.Welcome-Font {
+  font-family: 'Crimson Text', sans-serif;
+  /* Font family for Welcome to */
+  font-size: 24px;
+  /* Font size */
+  color: #333;
+  /* Text color */
+  text-transform: uppercase;
+  /* Convert text to uppercase */
+  /* You can add more styles as needed */
+}
+
+.Logo {
+  /* max-width: auto; */
+  height: 25rem;
+  /* Additional styling as needed */
+}
+
+
 p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Crimson Text', serif;
   font-size: 18px;
   text-align: left;
 }
 
-@font-face {
-  font-family: "Maharlika Regular";
-  src: url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.eot");
-  src: url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.svg#Maharlika Regular")format("svg");
-}
-
-/* Default font for 'Welcome to' */
-.Welcome-Font {
-  font-family: 'Your Default Font', sans-serif;
-  /* Add any other styling for this part */
-}
-
-/* Maharlika font for 'Skin ALCHEMY' */
-.Maharlika-Font {
-  font-family: 'Maharlika Regular', sans-serif;
-  /* Add any other styling for this part */
-}
-
-/* Smaller font size for 'ESTHETICS' */
-.Smaller-Font {
-  font-size: 10px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 .App-header {
   background-color: #FFFFF0;
