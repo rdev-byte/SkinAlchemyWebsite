@@ -48,13 +48,38 @@ Skin Alchemy is a skincare and beauty enterprise passionately led by Megan Rizk,
 To get started with Skin Alchemy, visit our website at [https://www.yourwebsite.com](https://www.yourwebsite.com) for more information and to book an appointment.
 
 ## Usage
-1. Schedule appointments.
-2. Discuss skincare goals and concerns.
-3. Experience personalized skincare solutions.
-4. Provide a payment method for people/visitors.
+    Landing Page:
+    1.1. Introduction
+    1.2. Location
+    1.3. Navigation Links
+
+    About Section:
+    2.1. About the Esthetician
+    2.2. Skincare Goals
+
+    Products Section:
+    3.1. Product List
+    3.2. Recommendations
+
+    Services Section:
+    4.1. Service Offerings
+    4.2. Personalized Solutions
+    4.3. Client Testimonials
+
+    Appointment Section:
+    5.1. Schedule Appointments
+    5.2. Availability
+
+    Payment Section:
+    6.1. Payment Methods
+    6.2. Payment Process
+
+    Modals:
+    7.1. Scheduling Modal
+    7.2. Payment Modal
 
 ## Contributing
-We welcome contributions from the community. If you have ideas, suggestions, or want to report issues, please open an [issue](https://github.com/yourusername/yourrepository/issues) on our GitHub repository.
+We welcome contributions from the community. If you have ideas, suggestions, or want to report issues, please open an [issue] (https://github.com/rdev-byte/SkinAlchemyWebsite) on our GitHub repository.
 
 ## License
 This project is licensed under the [Your License](LICENSE) - see the [LICENSE](LICENSE) file for details.
