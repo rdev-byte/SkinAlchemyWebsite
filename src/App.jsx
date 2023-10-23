@@ -1,7 +1,22 @@
-import './App.css';
+import StapleIndividual from './StapleIndividual';
 import logo from './img/logo.png';
 
 function App() {
+  const sections = [
+    {
+      id: 1,
+      section: 'Section 1',
+    },
+    {
+      id: 2,
+      section: 'Section 2',
+    },
+    {
+      id: 3,
+      section: 'Section 3',
+    },
+  ];
+
   return (
     <div className="Page-Wrapper">
       <header className="Jumbotron">
@@ -23,11 +38,12 @@ function App() {
             Her expertise covers a wide range of skincare services, making Skin Alchemy your go-to destination for achieving radiant and healthy skin.
           </p>
         </div>
-      </div>
-      <div classname="section2">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum,
-        </p>
+        {sections.map((section) => (
+          <section key={section.id}>
+            <h2>{section.section}</h2>
+            <StapleIndividual data={articleData} />
+          </section>
+        ))}
       </div>
     </div>
   );
