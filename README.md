@@ -79,6 +79,8 @@ To get started with Skin Alchemy, visit our website at [https://www.yourwebsite.
     7.2. Payment Modal
 
 ## Contributing
+Co-contributure: Joe Baldwin (https://github.com/Joe-Baldwin).
+
 We welcome contributions from the community. If you have ideas, suggestions, or want to report issues, please open an [issue] (https://github.com/rdev-byte/SkinAlchemyWebsite) on our GitHub repository.
 
 ## License

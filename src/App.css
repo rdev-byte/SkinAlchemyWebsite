@@ -31,6 +31,13 @@ p {
   text-align: left;
 }
 
+/* Style the section2 class */
+.section2 {
+  background-color: #9faa99;
+  border: 1px solid #ccc;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
 /* Import the Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
@@ -39,11 +46,4 @@ p {
 .Page-Wrapper {
   padding-left: 3rem;
   padding-right: 3rem;
-}
-
-/* Style the section2 class */
-.section2 {
-  background-color: #9faa99;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
