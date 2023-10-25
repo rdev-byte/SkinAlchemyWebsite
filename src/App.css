@@ -1,6 +1,8 @@
 /* Set the background color for the entire page */
 body {
   background-color: #FFFFFA;
+  margin: 0;
+  padding: 0;
 }
 
 /* Center the text in the App container */
@@ -12,16 +14,18 @@ body {
 .Welcome-Font {
   font-family: 'Crimson Text', sans-serif;
   font-size: 24px;
+  text-align: center;
   color: #333;
   text-transform: uppercase;
-  padding-top: 2rem;
-  padding-bottom: 0rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
 
 /* Style the Logo class */
 .Logo {
   height: 25rem;
-  padding-top: 0rem;
+  margin: 0 auto;
+  display: block; 
 }
 
 /* Style paragraph elements */
@@ -29,14 +33,15 @@ p {
   font-family: 'Crimson Text', serif;
   font-size: 18px;
   text-align: left;
+  margin: 1rem 0;
 }
 
 /* Style the section2 class */
 .section2 {
   background-color: #9faa99;
   border: 1px solid #ccc;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
+  margin: 2rem 0;
 }
 
 /* Import the Google Fonts */
@@ -44,6 +49,5 @@ p {
 
 /* Style the Page-Wrapper class with padding */
 .Page-Wrapper {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding: 0 3rem;
 }
