@@ -36,7 +36,7 @@ const sections = [
     content: (
       <div>
         <p>
-          Skin ALCHEMY ESTHETICS is the passionate endeavor of Megan Rizk, a
+          Skin Alchemy Esthetics is the passionate endeavor of Megan Rizk, a
           dedicated esthetician with over 11 years of experience in the beauty
           and skincare industry.
         </p>
