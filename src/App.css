@@ -44,7 +44,52 @@ h2 {
   display: inline-block;
 }
 
-/* Adjust the logo size and keep the aspect ratio */
+.service-list {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate-clockwise 10s linear infinite; 
+}
+
+.service-list li {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-color: #cccccc;
+  border: 1px solid #000000;
+  text-align: center;
+  line-height: 50px;
+  transform-origin: 50% 100%;
+  transform: rotate(0deg);
+  transition: transform 0.5s ease-in-out; 
+}
+
+#dermaplane { transform: rotate(0deg); }
+#face-wax { transform: rotate(51.43deg); }
+#facial-cupping { transform: rotate(102.86deg); }
+#high-frequency { transform: rotate(154.29deg); }
+#ice-gloves { transform: rotate(205.72deg); }
+#microcurrent { transform: rotate(257.15deg); }
+#red-light-therapy { transform: rotate(308.58deg); }
+
+@keyframes rotate-clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .Logo {
   max-width: 50%;
   height: auto;

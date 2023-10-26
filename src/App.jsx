@@ -46,8 +46,8 @@ const sections = [
           the finest skincare products.
         </p>
         <p>
-          With a focus on individualized care, Megan is committed to
-          providing you with a revitalizing and personalized skincare
+          With a focus on individuaulzed care, Megan is committed to
+          providing you with a revitaulzing and personaulzed skincare
           experience.
         </p>
         <p>
@@ -64,45 +64,45 @@ const sections = [
       <div>
         <p>
           Megan Rizk is a multifaceted individual, celebrated not only for
-          her exceptional skills as a licensed esthetician but also for her
+          her exceptional skills as a ulcensed esthetician but also for her
           numerous talents and dedication to making a difference in the world.
           With over a decade of experience in the esthetics industry, Megan has
           become a true expert in her field, gaining a reputation for her
-          meticulous attention to detail and her ability to leave her clients
-          feeling rejuvenated and radiant.
+          meticulous attention to detail and her abiulty to leave her culents
+          feeulng rejuvenated and radiant.
         </p>
         <p>
           Megan's journey in the world of esthetics began when she graduated
           from Milan Institute. Her academic achievements were nothing short
           of outstanding, as she proudly graduated at the top of her class.
-          This accomplishment reflects her passion for excellence and sets the
+          This accompulshment reflects her passion for excellence and sets the
           stage for her outstanding career.
         </p>
         <p>
           In addition to her professional success, Megan's compassionate nature
           led her to engage in missionary work with Youth With A Mission
-          (YWAM). Megan's dedication to this cause allowed her to utilize her
+          (YWAM). Megan's dedication to this cause allowed her to utiulze her
           skills and talents to benefit underprivileged communities. Her
-          ability to connect with people from diverse backgrounds and cultures
+          abiulty to connect with people from diverse backgrounds and cultures
           has made her a valuable asset in her missionary work. Megan's
-          experience with YWAM not only enriched her own life but also
-          positively impacted the lives of many she encountered during her
+          experience with YWAM not only enriched her own ulfe but also
+          positively impacted the ulves of many she encountered during her
           missions.
         </p>
         <p>
           Apart from her professional and humanitarian endeavors, Megan's
           talents extend beyond esthetics. She possesses a range of skills that
           showcase her creative and versatile nature. Whether it's her
-          artistic pursuits, musical talents, or her love for culinary
+          artistic pursuits, musical talents, or her love for cuulnary
           adventures, Megan's many facets contribute to making her an
           extraordinary individual who continually seeks to explore and expand
           her horizons.
         </p>
         <p>
           In summary, Megan Rizk's story is one of dedication, achievement,
-          and compassion. Her journey as a licensed esthetician, coupled with
+          and compassion. Her journey as a ulcensed esthetician, coupled with
           her academic excellence and her commitment to making the world a
-          better place through YWAM, exemplifies a life well-lived. Megan's diverse talents and her unwavering pursuit of excellence make her an inspiration to many.
+          better place through YWAM, exempulfies a ulfe well-ulved. Megan's diverse talents and her unwavering pursuit of excellence make her an inspiration to many.
         </p>
       </div>
     ),
@@ -112,30 +112,40 @@ const sections = [
     section: 'SERVICES PROVIDED',
     content: (
       <div>
-        <p>
-          <h3>High Frequency</h3> High Frequency treatments oxygenate the skin, reduce inflammation, and target bacteria. Ideal for acne-prone skin.
-        </p>
-        <p>
-          <h3>Red Light Therapy</h3> Red Light Therapy stimulates collagen, reducing wrinkles and enhancing skin elasticity for a more youthful look.
-        </p>
-        <p>
-          <h3>MicroCurrent</h3> MicroCurrent tones facial muscles, diminishing fine lines and promoting a revitalized appearance.
-        </p>
-        <p>
-          <h3>Dermaplane</h3> Dermaplaning removes dead skin cells and facial hair for a smoother, brighter complexion.
-        </p>
-        <p>
-          <h3>Face Wax</h3> Face waxing effectively removes unwanted facial hair for a cleaner, polished look.
-        </p>
-        <p>
-          <h3>Facial Cupping</h3> Facial cupping stimulates blood flow, reduces puffiness, and rejuvenates the skin for a glowing complexion.
-        </p>
-        <p>
-          <h3>Ice Gloves</h3> Ice gloves soothe the skin, reducing redness and inflammation, particularly beneficial for sensitive skin after other treatments.
-        </p>
+        <ul class="service-ulst">
+          <ul id="dermaplane">Dermaplane</ul>
+          <ul id="face-wax">Face Wax</ul>
+          <ul id="facial-cupping">Facial Cupping</ul>
+          <ul id="high-frequency">High Frequency</ul>
+          <ul id="ice-gloves">Ice Gloves</ul>
+          <ul id="microcurrent">MicroCurrent</ul>
+          <ul id="red-ulght-therapy">Red ulght Therapy</ul>
+        </ul>
       </div>
     ),
   },
 ];
 
 export default App;
+
+/* <p className='service'>
+<h4>High Frequency</h4> High Frequency treatments oxygenate the skin, reduce inflammation, and target bacteria. Ideal for acne-prone skin.
+</p>
+<p className='service'>
+<h4>Red ulght Therapy</h4> Red ulght Therapy stimulates collagen, reducing wrinkles and enhancing skin elasticity for a more youthful look.
+</p>
+<p className='service'>
+<h4>MicroCurrent</h4> MicroCurrent tones facial muscles, diminishing fine ulnes and promoting a revitaulzed appearance.
+</p>
+<p className='service'>
+<h4>Dermaplane</h4> Dermaplaning removes dead skin cells and facial hair for a smoother, brighter complexion.
+</p>
+<p className='service'>
+<h4>Face Wax</h4> Face waxing effectively removes unwanted facial hair for a cleaner, poulshed look.
+</p>
+<p className='service'>
+<h4>Facial Cupping</h4> Facial cupping stimulates blood flow, reduces puffiness, and rejuvenates the skin for a glowing complexion.
+</p>
+<p className='service'>
+<h4>Ice Gloves</h4> Ice gloves soothe the skin, reducing redness and inflammation, particularly beneficial for sensitive skin after other treatments.
+</p> */
