@@ -1,38 +1,120 @@
+/* Set the background color for the entire page */
+body {
+  background-color: #FFFFFA;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the text in the App container */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  margin: 0 auto;
+  
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 40vh;
+}
+
+/* Center the Welcome-Container vertically and horizontally */
+.Welcome-Container {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* Adjust the styles for the Welcome-Font */
+.Welcome-Font {
+  font-family: 'Crimson Text', sans-serif;
+  font-size: 36px;
+  color: #333;
+  text-transform: uppercase;
+  margin: 0 auto;
+  line-height: 1.5;
+  display: inline-block;
+  padding-top: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Adjust the styles for the Logo */
+.Logo {
+  max-width: 50%; /* Adjust the logo size */
+  height: 500px; /* Maintain the aspect ratio */
+  margin: 2rem 0; 
+  justify-content: center;
+  position: absolute;
+}
+
+
+/* Style paragraph elements */
+p {
+  font-family: 'Crimson Text', serif;
+  font-size: 18px;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+/* Style the section2 class */
+.section2 {
+  background-color: #9faa99;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+
+/* Import the Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+/* Style the Page-Wrapper class with padding */
+.Page-Wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .Page-Wrapper {
+    padding: 0;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+.abouttext {
+  margin-top: 2vh;
+  display: flex;
+  margin-bottom: 2vh;
+  justify-content: center;
+  font: bold;
+}
+
+.bg-paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 40vh;
+  background-color: #dadecd;
+  margin-bottom: 10vh;
+}
+
+.title {
+  font-size: 36px;
+  margin-top: 3vh;
+  
+}
+
+h1 {
+  font-size: 36px;
+  justify-content: center;
 }
