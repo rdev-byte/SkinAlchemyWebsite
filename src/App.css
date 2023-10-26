@@ -8,25 +8,39 @@ body {
 /* Center the text in the App container */
 .App {
   text-align: center;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-/* Define styles for the Welcome-Font class */
+/* Center the Welcome-Container vertically and horizontally */
+.Welcome-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Adjust the styles for the Welcome-Font */
 .Welcome-Font {
   font-family: 'Crimson Text', sans-serif;
-  font-size: 24px;
-  text-align: center;
+  font-size: 36px;
   color: #333;
   text-transform: uppercase;
-  margin-top: 2rem;
-  margin-bottom: 0;
+  margin: 0 auto;
+  line-height: 1.5;
+  display: inline-block;
+  padding-top: 3rem;
 }
 
-/* Style the Logo class */
+/* Adjust the styles for the Logo */
 .Logo {
-  height: 25rem;
-  margin: 0 auto;
-  display: block; 
+  max-width: 50%; /* Adjust the logo size */
+  height: auto; /* Maintain the aspect ratio */
+  margin: 2rem 0; 
 }
+
 
 /* Style paragraph elements */
 p {
@@ -42,6 +56,7 @@ p {
   border: 1px solid #ccc;
   padding: 2rem;
   margin: 2rem 0;
+  gap: 2rem;
 }
 
 /* Import the Google Fonts */
@@ -49,5 +64,12 @@ p {
 
 /* Style the Page-Wrapper class with padding */
 .Page-Wrapper {
-  padding: 0 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .Page-Wrapper {
+    padding: 0;
+  }
 }

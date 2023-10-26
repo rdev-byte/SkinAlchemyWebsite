@@ -1,17 +1,20 @@
 import logo from './img/logo.png';
+import './App.css';
 
 function App() {
   return (
-    <div className="Page-Wrapper">
-      <header className="Jumbotron">
+    <div className ="Page-Wrapper">
+      <header className ="Jumbotron">
       </header>
-      <div className="App">
-        <span className="Welcome-Font">- Welcome to -</span>
-        <div className="App-header">
-          <img src={logo} className="Logo" alt="logo" />
+      <div className ="App">
+        <div className ="Welcome-Container">
+          <span className ="Welcome-Font">- Welcome to -</span>
         </div>
-        {sections.map((section) => (
-          <section key={section.id}>
+        <div className ="App-header">
+          <img src ={logo} className ="Logo" alt ="logo" />
+        </div>
+        {sections.map((section)  => (
+          <section key = {section.id}>
             <h2>{section.section}</h2>
             {section.content}
           </section>
@@ -20,7 +23,8 @@ function App() {
     </div>
   );
 }
-const sections = [
+
+const sections  = [
   {
     id: 1,
     section: 'About My Spa',
@@ -44,12 +48,12 @@ const sections = [
   {
     id: 2,
     section: 'Section 2',
-    content: null, // You can set content to null if there's no content for this section.
+    content: null,
   },
   {
     id: 3,
     section: 'Section 3',
-    content: null, // You can set content to null if there's no content for this section.
+    content: null,
   },
 ];
 
