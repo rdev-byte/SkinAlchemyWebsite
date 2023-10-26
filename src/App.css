@@ -5,120 +5,44 @@ body {
   padding: 0;
 }
 
-/* Center the text in the App container */
+/* Center the text and add padding to the App container */
 .App {
   text-align: center;
   margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 2rem;
 }
 
-/* Center the Welcome-Container vertically and horizontally */
+/* Center the Welcome-Container vertically and horizontally with padding */
 .Welcome-Container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  padding-top: 3rem;
 }
 
 /* Adjust the styles for the Welcome-Font */
 .Welcome-Font {
-  font-family: 'Crimson Text', sans-serif;
+  font-family: "Crimson Text", sans-serif;
   font-size: 36px;
-  color: #333;/* Set the background color for the entire page */
-  body {
-    background-color: #FFFFFA;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Center the text and add padding to the App container */
-  .App {
-    text-align: center;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  
-  /* Center the Welcome-Container vertically and horizontally with padding */
-  .Welcome-Container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 3rem;
-  }
-  
-  /* Adjust the styles for the Welcome-Font */
-  .Welcome-Font {
-    font-family: "Crimson Text", sans-serif;
-    font-size: 36px;
-    color: #333;
-    text-transform: uppercase;
-    margin: 0 auto;
-    line-height: 1.5;
-    display: inline-block;
-  }
-  
-  /* Adjust the styles for the Logo */
-  .Logo {
-    max-width: 50%;
-    height: auto;
-    margin: 2rem 0;
-  }
-  
-  /* Style paragraph elements */
-  p {
-    font-family: "Crimson Text", serif;
-    font-size: 18px;
-    text-align: left;
-    margin: 1rem 0;
-  }
-  
-  /* Style the section2 class */
-  .section2 {
-    background-color: #9faa99;
-    border: 1px solid #ccc;
-    padding: 2rem;
-    margin: 2rem 0;
-    gap: 2rem;
-  }
-  
-  /* Fonts */
-  @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
-  @import url(https://db.onlinewebfonts.com/c/e9d9ecf545e95474ea2fc6bfb69554fc?family=Maharlika+Regular); 
-  
-  /* Style the Page-Wrapper class to center the content horizontally */
-  .Page-Wrapper {
-    display: flex;
-    justify-content: center;
-  }
-  
-  @media (max-width: 768px) {
-    .Page-Wrapper {
-      padding: 0;
-    }
-  }
-  
+  color: #333;
   text-transform: uppercase;
   margin: 0 auto;
   line-height: 1.5;
   display: inline-block;
-  padding-top: 3rem;
 }
 
-/* Adjust the styles for the Logo */
+/* Adjust the logo size and keep the aspect ratio */
 .Logo {
-  max-width: 50%; /* Adjust the logo size */
-  height: auto; /* Maintain the aspect ratio */
-  margin: 2rem 0; 
+  max-width: 50%;
+  height: auto;
+  margin: 2rem 0;
 }
-
 
 /* Style paragraph elements */
 p {
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   font-size: 18px;
   text-align: left;
   margin: 1rem 0;
@@ -133,15 +57,17 @@ p {
   gap: 2rem;
 }
 
-/* Import the Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@import url(https://db.onlinewebfonts.com/c/e9d9ecf545e95474ea2fc6bfb69554fc?family=Maharlika+Regular); 
 
-/* Style the Page-Wrapper class with padding */
+/* Center the content horizontally in the Page-Wrapper class */
 .Page-Wrapper {
   display: flex;
   justify-content: center;
 }
 
+/* Add padding to the Page-Wrapper class for screens smaller than 768px */
 @media (max-width: 768px) {
   .Page-Wrapper {
     padding: 0;
