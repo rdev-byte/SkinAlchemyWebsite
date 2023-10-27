@@ -5,56 +5,103 @@ body {
   padding: 0;
 }
 
-/* Center the text in the App container */
+/* Center the text and add padding to the App container */
 .App {
   text-align: center;
   margin: 0 auto;
-  
+  padding: 2rem; /* Add padding to the App container */
 }
 
-.App-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  height: 40vh;
-}
-
-/* Center the Welcome-Container vertically and horizontally */
+/* Center the Welcome-Container vertically and horizontally with padding */
 .Welcome-Container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  padding-top: 3rem;
 }
 
 /* Adjust the styles for the Welcome-Font */
 .Welcome-Font {
-  font-family: 'Crimson Text', sans-serif;
+  font-family: "Crimson Text", sans-serif;
   font-size: 36px;
   color: #333;
   text-transform: uppercase;
   margin: 0 auto;
   line-height: 1.5;
   display: inline-block;
-  padding-top: 3rem;
 }
 
 /* Adjust the styles for the Logo */
 .Logo {
-  max-width: 50%; /* Adjust the logo size */
-  height: 500px; /* Maintain the aspect ratio */
-  margin: 2rem 0; 
-  justify-content: center;
-  position: absolute;
+  max-width: 50%;
+  height: auto; /* Adjust the logo size and maintain aspect ratio */
+  margin: 2rem 0;
 }
 
+h2 {
+  font-family: "Maharlika Regular";
+  font-size: 24px;
+  color: #333;
+  text-transform: uppercase;
+  margin: 0 auto;
+  line-height: 1.5;
+  display: inline-block;
+}
+
+.service-list {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate-clockwise 10s linear infinite;
+}
+
+.service-list li {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-color: #cccccc;
+  border: 1px solid #000000;
+  text-align: center;
+  line-height: 50px;
+  transform-origin: 50% 100%;
+  transform: rotate(0deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* IDs for individual services with rotation angles */
+#dermaplane { transform: rotate(0deg); }
+#face-wax { transform: rotate(51.43deg); }
+#facial-cupping { transform: rotate(102.86deg); }
+#high-frequency { transform: rotate(154.29deg); }
+#ice-gloves { transform: rotate(205.72deg); }
+#microcurrent { transform: rotate(257.15deg); }
+#red-light-therapy { transform: rotate(308.58deg); }
+
+@keyframes rotate-clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 /* Style paragraph elements */
 p {
-  font-family: 'Crimson Text', serif;
-  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
   text-align: left;
   margin: 1rem 0;
 }
@@ -68,15 +115,27 @@ p {
   gap: 2rem;
 }
 
-/* Import the Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+/* Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oooh+Baby&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sassy+Frass&display=swap');
+@import url(https://db.onlinewebfonts.com/c/e9d9ecf545e95474ea2fc6bfb69554fc?family=Maharlika+Regular);
 
-/* Style the Page-Wrapper class with padding */
+@font-face {
+  font-family: "Maharlika Regular";
+  src: url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.eot");
+  src: url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.svg#Maharlika Regular") format("svg");
+}
+
+/* Center the content horizontally in the Page-Wrapper class */
 .Page-Wrapper {
   display: flex;
   justify-content: center;
 }
 
+/* Add padding to the Page-Wrapper class for screens smaller than 768px */
 @media (max-width: 768px) {
   .Page-Wrapper {
     padding: 0;
@@ -93,16 +152,16 @@ p {
 .abouttext {
   margin-top: 2vh;
   display: flex;
-  margin-bottom: 2vh;
+  margin bottom: 2vh; /* Fixed a typo here */
   justify-content: center;
-  font: bold;
+  font-weight: bold; /* Corrected the property name */
 }
 
 .bg-paragraph {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
+  justify-content: center;
+  align-items: center;
   height: 40vh;
   background-color: #dadecd;
   margin-bottom: 10vh;
@@ -111,7 +170,6 @@ p {
 .title {
   font-size: 36px;
   margin-top: 3vh;
-  
 }
 
 h1 {
