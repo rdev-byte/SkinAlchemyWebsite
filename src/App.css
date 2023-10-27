@@ -9,7 +9,7 @@ body {
 .App {
   text-align: center;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem; /* Add padding to the App container */
 }
 
 /* Center the Welcome-Container vertically and horizontally with padding */
@@ -22,7 +22,6 @@ body {
   padding-top: 3rem;
 }
 
-
 /* Adjust the styles for the Welcome-Font */
 .Welcome-Font {
   font-family: "Crimson Text", sans-serif;
@@ -32,6 +31,13 @@ body {
   margin: 0 auto;
   line-height: 1.5;
   display: inline-block;
+}
+
+/* Adjust the styles for the Logo */
+.Logo {
+  max-width: 50%;
+  height: auto; /* Adjust the logo size and maintain aspect ratio */
+  margin: 2rem 0;
 }
 
 h2 {
@@ -51,13 +57,13 @@ h2 {
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid #000000;
-  list-style: none; 
+  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: rotate-clockwise 10s linear infinite; 
+  animation: rotate-clockwise 10s linear infinite;
 }
 
 .service-list li {
@@ -70,9 +76,10 @@ h2 {
   line-height: 50px;
   transform-origin: 50% 100%;
   transform: rotate(0deg);
-  transition: transform 0.5s ease-in-out; 
+  transition: transform 0.5s ease-in-out;
 }
 
+/* IDs for individual services with rotation angles */
 #dermaplane { transform: rotate(0deg); }
 #face-wax { transform: rotate(51.43deg); }
 #facial-cupping { transform: rotate(102.86deg); }
@@ -88,12 +95,6 @@ h2 {
   to {
     transform: rotate(360deg);
   }
-}
-
-.Logo {
-  max-width: 50%;
-  height: auto;
-  margin: 2rem 0;
 }
 
 /* Style paragraph elements */
@@ -114,18 +115,18 @@ p {
   gap: 2rem;
 }
 
-/* Fonts */
+/* Fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oooh+Baby&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sassy+Frass&display=swap');
 @import url(https://db.onlinewebfonts.com/c/e9d9ecf545e95474ea2fc6bfb69554fc?family=Maharlika+Regular);
 
 @font-face {
   font-family: "Maharlika Regular";
   src: url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.eot");
-  src: url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.svg#Maharlika Regular")format("svg");
+  src: url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/e9d9ecf545e95474ea2fc6bfb69554fc.svg#Maharlika Regular") format("svg");
 }
 
 /* Center the content horizontally in the Page-Wrapper class */
@@ -139,4 +140,39 @@ p {
   .Page-Wrapper {
     padding: 0;
   }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+.abouttext {
+  margin-top: 2vh;
+  display: flex;
+  margin bottom: 2vh; /* Fixed a typo here */
+  justify-content: center;
+  font-weight: bold; /* Corrected the property name */
+}
+
+.bg-paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background-color: #dadecd;
+  margin-bottom: 10vh;
+}
+
+.title {
+  font-size: 36px;
+  margin-top: 3vh;
+}
+
+h1 {
+  font-size: 36px;
+  justify-content: center;
 }
