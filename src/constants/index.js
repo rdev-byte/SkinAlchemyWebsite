@@ -5,7 +5,7 @@ export const sections  = [
       content: (
         <>
           <p>
-            Skin ALCHEMY ESTHETICS is the passionate endeavor of Megan Rizk, a dedicated esthetician with over 11 years of experience in the beauty and skincare industry.
+            Skin Alchemy Esthetics is the passionate endeavor of Megan Rizk, a dedicated esthetician with over 11 years of experience in the beauty and skincare industry.
           </p>
           <p>
             Megan's mission is to enhance your natural beauty and skin health through a combination of innovative skincare practices and the use of the finest skincare products.
@@ -30,3 +30,5 @@ export const sections  = [
       content: null,
     },
   ];
+
+

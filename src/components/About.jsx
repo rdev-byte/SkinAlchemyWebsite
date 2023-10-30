@@ -5,6 +5,7 @@ const About = () => {
   return (
     <section >
         <motion.div
+            id="about"
             variants={slideIn('left', 'tween', 0, 1.25)}
             initial="hidden"
             animate="show"
