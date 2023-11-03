@@ -20,7 +20,7 @@ const Header = () => {
     };
 
     return (
-        <Navbar class="Navbar">
+        <Navbar className="Navbar">
             <NavbarToggler />
             <Collapse isOpen={menuOpen} navbar>
                 <Nav className="ms-auto" navbar>
