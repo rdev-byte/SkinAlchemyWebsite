@@ -1,6 +1,6 @@
 import './App.css';
 
-import About from './components/About';
+import About from './components/AboutMe';
 import Welcome from './components/Welcome';
 import Header from './components/Navbar';
 import Products from './components/Products';
@@ -13,7 +13,7 @@ function App() {
       <div>
         {/* Render the Header component */}
         <Header />
-        {/* Render the Welcome component */}
+        {/* This is where the viewer will see the company logo. */}
         <Welcome />
         {/* Render the About component */}
         <About />
