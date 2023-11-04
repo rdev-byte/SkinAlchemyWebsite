@@ -48,8 +48,9 @@ body {
   margin: 2rem 0; 
   justify-content: center;
   position: absolute;
+  display: block;
+  margin-top: 20px;
 }
-
 
 /* Style paragraph elements */
 p {
@@ -156,39 +157,18 @@ h4 {
   background-color: #afb2ab;
   /* z-index: 1; */
   text-align: center;
-  
 }
 
-.navbar-toggler {
-  border: none;
-  /* background-color: transparent; */
-  /* color: #000000; */
-  font-size: 18px;
-}
-
-/* .collapse {
-  background-color: #afb2ab;
-} */
-
-.nav {
+.menuBar {
   display: flex;
-  justify-content: space-between;
-}
-
-.nav-link {
-  color: #000000;
-  font-size: 16px;
-  padding: 10px;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.2s;
-}
-
-.nav-link:hover {
-  color: #f75e5e;
-  border-bottom: 1px solid #f75e5e;
-}
-
-.active {
-  color: #f75e5e;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #afb2ab;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  width: 100%; 
 }
