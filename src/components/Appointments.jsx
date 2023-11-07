@@ -28,8 +28,7 @@ const Appointments = () => {
                 <p className="abouttext">
                     Her expertise covers a wide range of skincare services, making Skin Alchemy your go-to destination for achieving radiant and healthy skin.
                 </p>
-            </div>
-            
+            </div> 
         </motion.div>
     </section>
   )
